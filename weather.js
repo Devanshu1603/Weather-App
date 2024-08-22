@@ -30,7 +30,7 @@ const displayHourlyforecast = (hourly_data, data) => {
 
         return  `<li class="weather-items">
                     <p class="items">${time}</p>
-                    <img src="${weatherIcon}.png" alt="" class="weather-icons" height="40px">
+                    <img src="images/${weatherIcon}.png" alt="" class="weather-icons" height="40px">
                     <p class="items-temperature">${temperature}&deg</p>
                 </li>`;
     }).join("");
@@ -53,7 +53,7 @@ const getWeatherdetails = async (cityname) => {
         
         currentweatherdiv.querySelector(".temperature").innerHTML = `${temperature}<span>&degC</span>`;
         currentweatherdiv.querySelector(".description").innerHTML = `${description}`;
-        currentweatherdiv.querySelector(".weather-icon").src = `${weatherIcon}.png`;
+        currentweatherdiv.querySelector(".weather-icon").src = `images/${weatherIcon}.png`;
 
         const hourly_data = [...data.forecast.forecastday[0].hour];
         displayHourlyforecast(hourly_data, data);

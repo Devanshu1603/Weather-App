@@ -68,7 +68,7 @@ body{
 
 .location-button{
   position: relative;
-  top: 4px;
+  top: 3px;
   left: 10px;
   height: 40px;
   width: 40px;
@@ -76,7 +76,10 @@ body{
   border: 1px solid #beb0ff;
   background-color: #fff;
 }
-
+#location_logo{
+  position: relative;
+  top: 2px;
+}
 .weather-section{
   align-items: center;
   margin-top: 50px;
@@ -116,9 +119,8 @@ body.show-no-result .no-result{
 
 .weather-list{
   display: flex;
-  gap: 40px;
+  gap: 36px;
   margin-top: 10px;
-  margin-left: 20px;
   list-style: none;
   overflow-x: auto;
   scrollbar-width: thin;
@@ -128,6 +130,7 @@ body.show-no-result .no-result{
 .weather-list li {
   flex: 1;
   margin: 10px;
+  margin-left: 15px;
 }
 
 .hourly-weather:hover .weather-list{

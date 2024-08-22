@@ -25,20 +25,20 @@
                     search
                     </span>
                <input type="search" placeholder="PATNA" class="search-input"></input>
-                <button class="location-button"><span class="material-symbols-outlined">
+                <button class="location-button"><span id="location_logo" class="material-symbols-outlined">
                     my_location
                     </span></button>
             </div>
         </div>
 
         <div class="no-result">
-            <img src="cancel.png" class="no-result-icon" alt="" height="120px">
+            <img src="images/cancel.png" class="no-result-icon" alt="" height="120px">
             <h3 class="title">Something Went Wrong</h3>
             <div class="message"><p>we are unable to retrive the Weather.</p><p>Please ensure that you have entered a valid</p><p>cityName or try again later</p></div>
         </div>
         <div class="weather-section">
             <div class="current-weather">
-            <img src="clouds.png" alt="" class="weather-icon" height="120px">
+            <img src="images/clouds.png" alt="" class="weather-icon" height="120px">
             <div class="weather-description">
             <h2 class="temperature">00<span id="deg">&degC</span><p></h2>
                 <p class="description">Weather Description</p>
@@ -52,5 +52,24 @@
     </div>
 
     <script src="weather.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAoFe-MT-4hAKH0p58YAwrikVKc2qkk-vQ",
+          authDomain: "weather-app-65e22.firebaseapp.com",
+          projectId: "weather-app-65e22",
+          storageBucket: "weather-app-65e22.appspot.com",
+          messagingSenderId: "75095109656",
+          appId: "1:75095109656:web:99e37c229ca0093ddad36d"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
 </body>
 </html>
