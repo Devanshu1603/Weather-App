@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="weather.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class='box1'>
+            <div className='text' id='text2'><div><h1>WEATHER APP</h1></div>
+                <div><span id="logo" class="material-symbols-outlined">
+                cloud</span>
+            </div>
+            </div>
+            <div className='text'><p>Get instant weather updates with our intuitive Weather App! Search for your location or use the location button to retrieve current weather conditions and hourly forecasts. Our app provides accurate and reliable information, ensuring you're always prepared for the day ahead. Simple, user-friendly, and optimized for performance.</p></div>
+            
+        </div>
+        <div class="box2">
+        <div class="search-section">
+            <div class="input-wrapper">
+                <span id="sp" class="material-symbols-outlined">
+                    search
+                    </span>
+               <input type="search" placeholder="PATNA" class="search-input"></input>
+                <button class="location-button"><span class="material-symbols-outlined">
+                    my_location
+                    </span></button>
+            </div>
+        </div>
+
+        <div class="no-result">
+            <img src="cancel.png" class="no-result-icon" alt="" height="120px">
+            <h3 class="title">Something Went Wrong</h3>
+            <div class="message"><p>we are unable to retrive the Weather.</p><p>Please ensure that you have entered a valid</p><p>cityName or try again later</p></div>
+        </div>
+        <div class="weather-section">
+            <div class="current-weather">
+            <img src="clouds.png" alt="" class="weather-icon" height="120px">
+            <div class="weather-description">
+            <h2 class="temperature">00<span id="deg">&degC</span><p></h2>
+                <p class="description">Weather Description</p>
+                </div>
+                </div>
+        </div>
+        <div class="hourly-weather">
+            <ul class="weather-list"></ul>
+        </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
